@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+
+		/*Diseño tabla 1*/
+		#t1 table {
+	  		font-family: arial, sans-serif;
+		  	border-collapse: collapse;
+		 	width: 100%;
+		}
+
+		#t1 td, th {
+		  	border: 1px solid #dddddd;
+		  	text-align: left;
+		  	padding: 8px;
+		}
+
+		#t1 tr:nth-child(even) {
+		 	background-color: #dddddd;
+		}
+
+
+
+
+
+		table, th, td {
+			/*agregar bordes*/
+		  	border: 1px solid black;
+		  	border-collapse: collapse;
+		}
+		th, td {
+			/*agregar margen interno*/
+	  		padding: 15px;
+		}
+		th {
+			/*alinear texto a la izquierda*/
+	  		text-align: left;
+		}
+		table {
+			/*agregar espacio entre bordes*/
+	  		border-spacing: 5px;
+		}
+
+		#t2 {
+		  width: 100%;
+		  background-color: #f1f1c1;
+		}
+		#t2 tr:nth-child(even) {
+		  background-color: #eee;
+		}
+		#t2 tr:nth-child(odd) {
+		 background-color: #fff;
+		}
+		#t2 th {
+		  background-color: black;
+		  color: white;
+		}
+
+
+
+
+
+	</style>
+</head>
+<body>
+
+	<h2>Tabla 1</h2>
+	<p>Tabla con estilo CSS</p>
+	<table id="t1">
+	  <tr>
+	    <th>Company</th>
+	    <th>Contact</th>
+	    <th>Country</th>
+	  </tr>
+	  <tr>
+	    <td>Alfreds Futterkiste</td>
+	    <td>Maria Anders</td>
+	    <td>Germany</td>
+	  </tr>
+	  <tr>
+	    <td>Centro comercial Moctezuma</td>
+	    <td>Francisco Chang</td>
+	    <td>Mexico</td>
+	  </tr>
+	  <tr>
+	    <td>Ernst Handel</td>
+	    <td>Roland Mendel</td>
+	    <td>Austria</td>
+	  </tr>
+	  <tr>
+	    <td>Island Trading</td>
+	    <td>Helen Bennett</td>
+	    <td>UK</td>
+	  </tr>
+	  <tr>
+	    <td>Laughing Bacchus Winecellars</td>
+	    <td>Yoshi Tannamuri</td>
+	    <td>Canada</td>
+	  </tr>
+	  <tr>
+	    <td>Magazzini Alimentari Riuniti</td>
+	    <td>Giovanni Rovelli</td>
+	    <td>Italy</td>
+	  </tr>
+	</table>
+
+	<br>
+
+	<!--Tabla-->
+	<h2>Tabla 2</h2>
+	<p>Tabla simple</p>
+	<table style="width:100%">
+	  <tr>
+	    <th>Firstname</th>
+	    <th>Lastname</th>
+	    <th>Age</th>
+	  </tr>
+	  <tr>
+	    <td>Jill</td>
+	    <td>Smith</td>
+	    <td>50</td>
+	  </tr>
+	  <tr>
+	    <td>Eve</td>
+	    <td>Jackson</td>
+	    <td>94</td>
+	  </tr>
+	</table>
+
+	<br>
+
+	<!--tablas con combinacion de eespacios-->
+
+		<!--Columnas-->		
+		<h2>Tabla 3</h2>
+		<p>Combinar columnas</p>
+		<table style="width:100%">
+		  <tr>
+		    <th>Name</th>
+		    <th colspan="2">Telephone</th>
+		  </tr>
+		  <tr>
+		    <td>Bill Gates</td>
+		    <td>55577854</td>
+		    <td>55577855</td>
+		  </tr>
+		</table>
+
+		<!--filas-->
+
+		<h2>Tabla 4</h2>
+		<p>Combinar filas</p>
+		<table style="width:100%">
+		  <tr>
+		    <th>Name:</th>
+		    <td>Bill Gates</td>
+		  </tr>
+		  <tr>
+		    <th rowspan="2">Telephone:</th>
+		    <td>55577854</td>
+		  </tr>
+		  <tr>
+		    <td>55577855</td>
+		  </tr>
+		</table>
+
+	<br>
+
+	<!--titulo de la tabla-->
+	<h2>Tabla 4</h2>
+	<p>Tabla con titulo</p>
+	<table style="width:100%">
+	  <caption>Monthly savings</caption>
+	  <tr>
+	    <th>Month</th>
+	    <th>Savings</th>
+	  </tr>
+	  <tr>
+	    <td>January</td>
+	    <td>$100</td>
+	  </tr>
+	  <tr>
+	    <td>February</td>
+	    <td>$50</td>
+	  </tr>
+	</table>
+
+	<br>
+
+	<!--tabla con estili unico-->
+	<h2>Tabla 5</h2>
+	<p>Tabla con otro estilo CSS</p>
+	<table id="t2">
+	  <tr>
+	    <th>Firstname</th>
+	    <th>Lastname</th> 
+	    <th>Age</th>
+	  </tr>
+	  <tr>
+	    <td>Jill</td>
+	    <td>Smith</td>
+	    <td>50</td>
+	  </tr>
+	  <tr>
+	    <td>Eve</td>
+	    <td>Jackson</td>
+	    <td>94</td>
+	  </tr>
+	  <tr>
+	    <td>John</td>
+	    <td>Doe</td>
+	    <td>80</td>
+	  </tr>
+	</table>
+</body>
+</html>
